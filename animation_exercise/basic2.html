@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jq basic2</title>
+
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+        h1{
+            text-align: center;
+        }
+        div{
+            margin: auto;
+        }
+        ul{
+
+        }
+        li{
+            background-color: blueviolet;
+            color: white;
+        }
+    </style>
+
+
+</head>
+<body>
+<div>
+<h1> My ToDo-List</h1>
+
+
+    <ul>
+        <li> Get up - don't be lazy</li>
+        <li>Make Tea - lots of tea </li>
+        <li>Don't share your Tea </li>
+        <li>Drink your Tea - might be hot </li>
+        <li>CLEAN UP YOU MESS !!!!!!</li>
+    </ul>
+
+    <label for="addItem">Add a new Task: </label>
+    <input type="text" id="addItem" value=" ">
+    <button type="submit" id="submit">Add</button>
+</div>
+
+<script>
+
+    $(document).ready(function() {
+
+         var button =$('#submit');
+
+
+        button.on('click', function () {
+            var newItem = $('#addItem').val();
+            $('ul').append(`<li>${newItem}</li>`);
+
+            
+        $('li').on('click', function() {
+                $(this).animate({
+                        opacity: 0.0,
+                        paddingLeft: '+=80'
+                    }, 1000, function() {
+                        $(this).remove();
+                    });
+                });
+
+
+    })
+
+
+    });
+
+
+
+    
+</script>
+</body>
+</html>
