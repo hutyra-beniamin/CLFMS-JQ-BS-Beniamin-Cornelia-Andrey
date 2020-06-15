@@ -13,10 +13,9 @@
             margin: auto;
         }
         ul{
-
+            background-color: lightgoldenrodyellow;
         }
         li{
-            background-color: blueviolet;
             color: white;
         }
     </style>
@@ -52,7 +51,7 @@
             var newItem = $('#addItem').val();
             $('ul').append(`<li>${newItem}</li>`);
 
-            
+
         $('li').on('click', function() {
                 $(this).animate({
                         opacity: 0.0,
