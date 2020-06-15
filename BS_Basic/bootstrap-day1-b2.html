@@ -27,21 +27,45 @@
     <body>
 
         <div class="container">
-            <p>My First 5 Weeks at CodeFactory</p>
-            <p>
+            <!--Nav starts-->
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <!--Nav ends-->
+            <br>
+            <p class="lead">My First 5 Weeks at CodeFactory</p>
+            <p class="font-italic">
                 I've finished my five weeks at CodeFactory. Here are some of the things I've learned so far:
             </p>
-            <p>Git and <small>GitHub</small></p>
-            <ul>
-                <li>What is VC, Necessity, What is Git?</li>
-                <li>Installation & Config via Command Line</li>
-                <li>Commits, Best Practices, Standards</li>
-                <li>Get GitHub Repository</li>
-                <li>Merging multiple Git branches back together.</li>
-                <li>Cloning a project from GitHub to my local machine.</li>
-                <li>Publishing a website on GitHub pages.</li>
+            <p class="initialism">Git and <small>GitHub</small></p>
+            <ul class="list-inline">
+                <li class="list-inline-item">What is VC, Necessity, What is Git?</li>
+                <li class="list-inline-item">Installation & Config via Command Line</li>
+                <li class="list-inline-item">Commits, Best Practices, Standards</li>
+                <li class="list-inline-item">Get GitHub Repository</li>
+                <li class="list-inline-item">Merging multiple Git branches back together.</li>
+                <li class="list-inline-item">Cloning a project from GitHub to my local machine.</li>
+                <li class="list-inline-item">Publishing a website on GitHub pages.</li>
             </ul>
-            <p>HTML</p>
+            <p class="display-1">HTML</p>
             <ul>
                 <li>Using HTML tags to create websites.</li>
                 <li>Indenting and organize HTML correctly.</li>
@@ -50,7 +74,7 @@
                 <li>Using both spans and divs.</li>
                 <li>Adding d IDs to style HTML with CSS.</li>
             </ul>
-            <p>CSS</p>
+            <p class="alert alert-primary" role="alert">CSS</p>
             <ul>
                 <li>Creating a stylesheet.</li>
                 <li>Using CSS selectors to specify an HTML element.</li>
